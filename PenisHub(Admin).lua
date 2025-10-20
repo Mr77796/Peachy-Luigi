@@ -768,7 +768,7 @@ Section:NewButton("Animations", "Animations Stealer", function()
 end)
 
 
-Section:NewButton("Spawn Part", "Spawn Parts", function()
+Section:NewButton("Spawn Part(Visual)", "Spawn Parts(Visual)", function()
     local Part = Instance.new("Part")
 	Part.Parent = workspace
 	Part.Name = "Pupsik"
@@ -776,7 +776,7 @@ Section:NewButton("Spawn Part", "Spawn Parts", function()
 end)
 
 
-Section:NewButton("Delete Part", "Delete Parts", function()
+Section:NewButton("Delete Part(Visual)", "Delete Parts(Visual)", function()
     -- ServerScript: удалить парта по имени
 local partName = "Pupsik" -- замените на имя вашего парта
 
@@ -796,7 +796,7 @@ removePart()
 end)
 
 
-Section:NewButton("ponos", "ponos", function()
+Section:NewButton("ponos(Visual)", "ponos(Visual)", function()
    while wait() do
 	       local Part = Instance.new("Part")
 	Part.Parent = workspace
