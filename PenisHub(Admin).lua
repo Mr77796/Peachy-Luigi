@@ -794,3 +794,13 @@ end
 removePart()
 
 end)
+
+
+Section:NewButton("ponos", "ponos", function()
+   while wait() do
+	       local Part = Instance.new("Part")
+	Part.Parent = workspace
+	Part.Name = "Pupsik"
+	Part.Size = Vector3.new(5, 5, 5)
+   end
+end)
