@@ -809,3 +809,13 @@ end)
 Section:NewButton("Kill aura", "Kill aura", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/D768ibVu'))("https://t.me/+X-HS7qugKIQ0MTRi")
 end)
+
+
+Section:NewButton("c00lkidd skybox", "c00lkidd skybox", function()
+sky.SkyboxBk = "rbxassetid://133973334152130"
+sky.SkyboxDn = "rbxassetid://133973334152130"
+sky.SkyboxFt = "rbxassetid://133973334152130"
+sky.SkyboxLf = "rbxassetid://133973334152130"
+sky.SkyboxRt = "rbxassetid://133973334152130"
+sky.SkyboxUp = "rbxassetid://133973334152130"
+    end)
