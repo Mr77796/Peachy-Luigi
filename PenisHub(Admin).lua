@@ -1625,18 +1625,20 @@ Section:NewButton("Kill aura", "Kill aura", function()
 end)
 
 
-Section:NewButton("c00lkidd skybox", "c00lkidd skybox", function()
-    local rng = 1
+Section:NewButton("ClickTP", "ClickTP", function()
+				-- LocalScript
+local Players = game:GetService("Players")
+local UserInputService = game:GetService("UserInputService")
+local player = Players.LocalPlayer
+local mouse = player:GetMouse()
 
-while wait(15) do
-	if rng == 1 then 
-		print("Rain Has Occured")
-		game.Lighting.Sky.SkyboxBk = "http://www.roblox.com/asset/?id=133973334152130"
-		game.Lighting.Sky.SkyboxDn = "http://www.roblox.com/asset/?id=133973334152130"
-		game.Lighting.Sky.SkyboxFt = "http://www.roblox.com/asset/?id=133973334152130"
-		game.Lighting.Sky.SkyboxLf = "http://www.roblox.com/asset/?id=133973334152130"
-		--E.T.C.
-	end
-end
-end)
-    end)
+mouse.KeyDown:Connect(function(key)
+    if key:lower() == "t" then
+        if mouse.Target then
+            local char = player.Character
+            if char and char:FindFirstChild("HumanoidRootPart") then
+                char.HumanoidRootPart.CFrame = mouse.Hit + Vector3.new(0, 5, 0)
+            end
+        end
+    end
+end)				
