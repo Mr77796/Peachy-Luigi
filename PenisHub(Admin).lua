@@ -1623,22 +1623,3 @@ end)
 Section:NewButton("Kill aura", "Kill aura", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/D768ibVu'))("https://t.me/+X-HS7qugKIQ0MTRi")
 end)
-
-
-Section:NewButton("ClickTP", "ClickTP", function()
-				-- LocalScript
-local Players = game:GetService("Players")
-local UserInputService = game:GetService("UserInputService")
-local player = Players.LocalPlayer
-local mouse = player:GetMouse()
-
-mouse.KeyDown:Connect(function(key)
-    if key:lower() == "t" then
-        if mouse.Target then
-            local char = player.Character
-            if char and char:FindFirstChild("HumanoidRootPart") then
-                char.HumanoidRootPart.CFrame = mouse.Hit + Vector3.new(0, 5, 0)
-            end
-        end
-    end
-end)				
